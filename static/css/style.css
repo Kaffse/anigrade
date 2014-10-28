@@ -2,8 +2,30 @@ body {
     background-color: #f0f0f0;
 }
 
+table {
+    width:98%;
+    padding-left: 1%;
+}
+
+th {
+    background-color: #000000;
+    color: #f0f0f0;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+
+td h3 {
+    margin-top: 0px;
+    margin-bottom: 1px;
+}
+
 .container {
 	text-align: center;
+    width: 90%;
+    padding-left: 5%;
 }
 
 .continue {

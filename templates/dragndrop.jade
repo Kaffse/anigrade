@@ -1,4 +1,6 @@
 html
+    headings = ["Watching", "Watched", "Plan to Watch", "Dropped"]
+    testdata = ["anime1","anime2","anime3","anime4","anime5"]
     head
         link(rel="stylesheet", href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css")
         link(rel="stylesheet", href="static/css/style.css")
@@ -8,3 +10,18 @@ html
             div(class="title")
                 h1 AniGrade UI Test
                 hr 
+            div(class="pure-g")
+                for heading in headings
+                    div(class="pure-u-1-4")
+                        table
+                            tr
+                                th #{heading}
+                            for item in testdata
+                                tr
+                                    td 
+                                        h3 #{item}
+                                        hr
+                                        div
+                                            img (src="http://media.tumblr.com/5aa619b94bfd6b1f5ccc395652c06e93/tumblr_inline_mpeag0ZoTH1qz4rgp.gif")
+                                        div
+                                            p This is some sample text in a vain attempt to make this look like it has stuff in it.
