@@ -17,8 +17,7 @@ users = []
 
 for name in usernames:
     users = users + [Node("User", username=name)]
-
-graph.create(users)
+    graph.create(users[-1])
 
 # Create some bougus anime and some random relationships
 
@@ -29,4 +28,4 @@ for anime in animelist:
     for node in animenodes:
         for user in users:
             if (r.random() > 0.4): # 60% chance each user will have watched the anime
-                graph.create(Relationship(user, "WATCHED", node, rating="F")
+                graph.create(Relationship(user, "WATCHED", node, rating="F"))
